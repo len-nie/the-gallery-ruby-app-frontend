@@ -1,25 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Welcome to The Gallery!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { InstagramGallery } from "instagram-gallery";
+
+const App = () => {
+  return <InstagramGallery accessToken="accessToken" count={15}/>
 }
 
-export default App;
+export default App
