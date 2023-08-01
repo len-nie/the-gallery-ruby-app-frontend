@@ -6,4 +6,6 @@ const App = () => {
   return <InstagramGallery accessToken="accessToken" count={15}/>
 }
 
+
+
 export default App
