@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Photo from './components/Photos';
 import './index.css';
 // import jpeg from '.src/jpeg'
+import Gallery from './components/Gallery.';
+
+
 
 const Photos = [
   {
@@ -61,6 +64,8 @@ const Photos = [
 ];
 
 const App = () => {
+
+  
   const [photos, setPhotos] = useState(Photos);
 
   const handleDelete = (id) => {
@@ -71,21 +76,32 @@ const App = () => {
     alert(`You have purchased photo with ID ${id}`);
   };
 
+
+  
   return (
-    <div className="gallery">
-      {photos.map((photo) => (
-        <Photo
-          key={photo.id}
-          id={photo.id}
-          title={photo.title}
-          source={photo.source}
-          description={photo.description}
-          onDelete={handleDelete}
-          onPurchase={handlePurchase}
-        />
-      ))}
+    <>
+    <div>
+      <h1>Welcome to My App</h1>
+      <Gallery /> {}
     </div>
+
+    <div className="gallery">
+        {photos.map((photo) => (
+          <Photo
+            key={photo.id}
+            id={photo.id}
+            title={photo.title}
+            source={photo.source}
+            description={photo.description}
+            onDelete={handleDelete}
+            onPurchase={handlePurchase} />
+
+        ))}
+      </div></>
   );
 };
+
+
+
 
 export default App;
