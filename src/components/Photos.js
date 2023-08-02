@@ -1,4 +1,4 @@
-// components/Photo.js
+
 import React from 'react';
 
 const Photo = ({ id, title, source, description, onDelete, onPurchase }) => {
