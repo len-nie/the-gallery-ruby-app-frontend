@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import Photo from './components/Photo';
+import Photo from './components/Photos';
 import './index.css';
+// import jpeg from '.src/jpeg'
 
 const Photos = [
   {
     id: 1,
     title: 'Photo 1',
-    source: '/jpeg/photo1.jpg',
+    source: '/Users/lennie/Development /the-gallery-frontend/src/jpeg/photo1.jpg',
     description: 'Description for Photo 1',
   },
   {
@@ -67,7 +68,6 @@ const App = () => {
   };
 
   const handlePurchase = (id) => {
-    // Implement your purchase logic here
     alert(`You have purchased photo with ID ${id}`);
   };
 
