@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Photo from './components/Photos';
 import './index.css';
 // import jpeg from '.src/jpeg'
-import Gallery from './components/Gallery.';
+import Gallery from './components/Gallery.js';
 
 
 
@@ -10,7 +10,7 @@ const Photos = [
   {
     id: 1,
     title: 'Photo 1',
-    source: '/Users/lennie/Development /the-gallery-frontend/src/jpeg/photo1.jpg',
+    source: '/jpeg/photo1.jpg',
     description: 'Description for Photo 1',
   },
   {
@@ -81,7 +81,7 @@ const App = () => {
   return (
     <>
     <div>
-      <h1>Welcome to My App</h1>
+      <h1>The Gallery</h1>
       <Gallery /> {}
     </div>
 
