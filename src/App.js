@@ -1,63 +1,57 @@
 import React, { useState } from 'react';
 import Photo from './components/Photos';
 import './index.css';
-// import jpeg from '.src/jpeg'
+
+import image from "./jpeg/photo1.jpg"
+import image1 from "./jpeg/photo2.jpg"
+import image2 from "./jpeg/photo3.jpg";
+import image3 from "./jpeg/photo4.jpg";
+import image4 from "./jpeg/photo5.jpg";
+import image5 from "./jpeg/photo6.jpg";
+import image6 from "./jpeg/photo7.jpg";
+import image7 from "./jpeg/photo8.jpg";
+import image8 from "./jpeg/photo9.jpg";
 
 
 const Photos = [
   {
     id: 1,
     title: 'Photo 1',
-    source: '/jpeg/photo1.jpg',
-    description: 'Description for Photo 1',
-  },
-  {
+    source: image,
+  },{
     id: 2,
     title: 'Photo 2',
-    source: '/jpeg/photo2.jpg',
-    description: 'Description for Photo 2',
-  },
-  {
+    source: image1,
+  },{
     id: 3,
     title: 'Photo 3',
-    source: '/jpeg/photo3.jpg',
-    description: 'Description for Photo 3',
-  },
-  {
+    source: image2,
+  },{
     id: 4,
     title: 'Photo 4',
-    source: '/jpeg/photo4.jpg',
-    description: 'Description for Photo 4',
-  },
-  {
+    source: image3,
+  },{
     id: 5,
     title: 'Photo 5',
-    source: '/jpeg/photo5.jpg',
-    description: 'Description for Photo 5',
-  },
-  {
+    source: image4,
+  },{
     id: 6,
     title: 'Photo 6',
-    source: '/jpeg/photo6.jpg',
-    description: 'Description for Photo 6',
-  },
-  {
+    source: image5,
+  },{
     id: 7,
     title: 'Photo 7',
-    source: '/jpeg/photo7.jpg',
-    description: 'Description for Photo 7',
+    source: image6,
   },
   {
     id: 8,
     title: 'Photo 8',
-    source: '/jpeg/photo8.jpg',
-    description: 'Description for Photo 8',
+    source: image7,
   },
   {
     id: 9,
     title: 'Photo 9',
-    source: '/jpeg/photo9.jpg',
-    description: 'Description for Photo 9',
+    source: image8,
   },
 ];
 
@@ -79,8 +73,8 @@ const App = () => {
   
   return (
     <>
-    <div>
-      <h1>The Gallery</h1>
+    <div className='header-text'>
+      <h2>The Gallery</h2>
       <p> welcome to the visionboard for my artisitic vision, The Gallery.</p>
     </div>
 
@@ -89,9 +83,7 @@ const App = () => {
           <Photo
             key={photo.id}
             id={photo.id}
-            title={photo.title}
             source={photo.source}
-            description={photo.description}
             onDelete={handleDelete}
             onPurchase={handlePurchase} />
 

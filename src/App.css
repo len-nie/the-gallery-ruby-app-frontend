@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #86a1d5;
+  background-color: #61768a47;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,8 @@
   color: white;
   scroll-behavior: auto;
 }
+
+
 
 
 
